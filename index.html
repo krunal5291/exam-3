@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store Products</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.product p {
+    margin-top: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <label for="sort">Sort By:</label>
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="price_asc">Price Low to High</option>
+            <option value="price_desc">Price High to Low</option>
+        </select>
+
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search...">
+
+
+    </div>
+
+    <div id="products-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
